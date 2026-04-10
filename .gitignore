@@ -1,0 +1,8 @@
+# Context files may contain sensitive firm data — consider keeping context/ in a private repo
+# Uncomment the line below if you want to exclude filled-in context from version control:
+# context/
+
+.DS_Store
+*.swp
+*.swo
+*~
