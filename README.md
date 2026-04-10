@@ -1,5 +1,7 @@
 # Investment DNA
 
+> Built by [Claira.io](https://claira.io) — AI infrastructure for investment teams
+
 Dynamic blueprint of how your firm thinks, decides, and deploys capital.
 
 A structured context package that captures an institutional investment firm's DNA, criteria, and active portfolio — designed to be consumed by AI agents for deal evaluation, portfolio review, and strategy alignment.
@@ -52,9 +54,23 @@ investment-dna/
 4. **Vendor-agnostic** — Works with Claude, ChatGPT, Gemini, or custom tooling
 5. **Opinionated** — Captures what you *actually* believe, not what sounds good in a pitch deck
 
+## Example
+
+See [`examples/summit-peak-capital/`](examples/summit-peak-capital/) for a complete example of a fictional growth equity firm with all 9 context files filled in — including portfolio positions, decision log with passes, and sector theses with conviction levels.
+
 ## Getting Started
 
 See [GETTING-STARTED.md](GETTING-STARTED.md) for setup instructions.
+
+## Built by Claira
+
+[Claira.io](https://claira.io) builds AI infrastructure for investment teams. Investment DNA is our open-source contribution to the ecosystem — a structured way to make any AI system understand your firm before it tries to help you.
+
+If you're looking to go beyond static context files and into automated deal evaluation, portfolio monitoring, and IC workflow automation, [check out what we're building](https://claira.io).
+
+## Contributing
+
+We welcome contributions — see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
