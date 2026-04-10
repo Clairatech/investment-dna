@@ -27,6 +27,17 @@ The interview is designed to push past vague answers. "We look for great teams" 
 | 8 | Team & Decisions | `team-and-roles.md` | IC structure, process, culture |
 | 9 | Decision Log | `decision-log.md` | Best/worst deals, passes, patterns |
 
+## Vertical Adaptation
+
+The default templates are equity-oriented. If your firm operates in **private credit** or **commercial real estate**, read [VERTICALS.md](VERTICALS.md) before starting. It covers:
+
+- Which template fields to replace or add for your asset class
+- Vertical-specific scorecard dimensions and weights
+- How to adjust the interview questions for your strategy
+- Return driver models and risk frameworks by vertical
+
+Private equity firms can use the defaults with minor additions noted in the guide.
+
 ## Option 2: Self-Directed Setup
 
 1. **Fork or clone this repo**

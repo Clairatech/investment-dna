@@ -4,6 +4,8 @@ Dynamic blueprint of how your firm thinks, decides, and deploys capital.
 
 A structured context package that captures an institutional investment firm's DNA, criteria, and active portfolio — designed to be consumed by AI agents for deal evaluation, portfolio review, and strategy alignment.
 
+Works across **private equity**, **private credit**, and **commercial real estate** — see [VERTICALS.md](VERTICALS.md) for vertical-specific adaptation guidance, scorecard weights, and interview adjustments.
+
 Inspired by [personal-context-portfolio](https://github.com/nlwhittemore/personal-context-portfolio), adapted for investment management.
 
 ## Why This Exists
@@ -38,6 +40,7 @@ investment-dna/
 │   ├── deal-scorecard.md       # Weighted scoring framework
 │   └── evaluation-prompt.md    # System prompt for AI deal evaluation
 ├── examples/                   # Example completed context for reference
+├── VERTICALS.md               # Adaptation guide for PE, credit, CRE
 └── GETTING-STARTED.md
 ```
 
@@ -52,3 +55,7 @@ investment-dna/
 ## Getting Started
 
 See [GETTING-STARTED.md](GETTING-STARTED.md) for setup instructions.
+
+## License
+
+[MIT](LICENSE) — free to use, modify, and distribute. Attribution required.
