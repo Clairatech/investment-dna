@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment DNA — Claira</title>
+  <meta name="description" content="The Full-Stack Investment Firm. An open-source framework by Claira for codifying how your firm thinks, decides, and deploys capital." />
+  <meta property="og:title" content="Investment DNA — The Full-Stack Investment Firm" />
+  <meta property="og:description" content="An idealized framework for how investment firms could work. Open source by Claira." />
+  <meta property="og:type" content="website" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #fafaf8; color: #1a1a1a; font-family: Georgia, "Times New Roman", serif; -webkit-font-smoothing: antialiased; }
+    .sans { font-family: "Helvetica Neue", Arial, sans-serif; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="sans" style="border-bottom:1px solid #e0ddd8;padding:14px 40px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#999;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="color:#1a1a1a;font-weight:600">claira</span>
+      <span style="color:#ccc">/</span>
+      <span>investment-dna</span>
+    </div>
+    <a href="https://github.com/Claira-AI/investment-dna" target="_blank" rel="noopener" style="text-decoration:none;border-bottom:1px solid #ddd;padding-bottom:1px">View on GitHub</a>
+  </nav>
+
+  <!-- Hero -->
+  <header style="padding:72px 40px 20px;max-width:720px">
+    <div class="sans" style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#b0ada6;margin-bottom:16px">Open source by Claira</div>
+    <h1 style="font-size:46px;font-weight:400;line-height:1.12;letter-spacing:-0.025em">The Full-Stack<br/>Investment Firm</h1>
+    <div style="width:48px;height:2px;background:#1a1a1a;margin:28px 0"></div>
+    <p style="font-size:18px;line-height:1.65;color:#555;margin-bottom:12px;max-width:580px">
+      An idealized framework for how investment firms could work, where ingestion, standardization, and decision-making become infrastructure, and human energy goes entirely to sourcing and capital.
+    </p>
+    <p style="font-size:15px;line-height:1.6;color:#999;max-width:580px;font-style:italic">
+      We're not there yet. But this is the direction, and Investment DNA is the first building block. A structured, open-source way to codify how your firm thinks, decides, and deploys capital.
+    </p>
+  </header>
+
+  <!-- Toggle -->
+  <div style="padding:32px 40px 12px">
+    <div id="toggle" class="sans" style="display:inline-flex;border:1px solid #e0ddd8;font-size:12px;letter-spacing:0.04em">
+      <button onclick="setView('today')" id="btn-today" style="padding:8px 20px;border:none;background:transparent;color:#888;cursor:pointer;font-family:inherit;font-size:inherit;letter-spacing:inherit;text-transform:uppercase">How it works today</button>
+      <button onclick="setView('vision')" id="btn-vision" style="padding:8px 20px;border:none;background:#1a1a1a;color:#fafaf8;cursor:pointer;font-family:inherit;font-size:inherit;letter-spacing:inherit;text-transform:uppercase">Where this is going</button>
+    </div>
+  </div>
+
+  <!-- Pipeline label -->
+  <div class="sans" style="padding:16px 40px 8px;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#b0ada6">Core pipeline</div>
+
+  <!-- Three pillars -->
+  <div id="pillars" style="display:flex;border-top:1px solid #e0ddd8;border-bottom:1px solid #e0ddd8"></div>
+
+  <!-- Flow -->
+  <div class="sans" style="display:flex;justify-content:center;align-items:center;gap:12px;padding:20px 40px;font-size:11px;color:#b0ada6;letter-spacing:0.06em">
+    <span>Ingest</span><span style="color:#ccc">&rarr;</span>
+    <span>Standardize</span><span style="color:#ccc">&rarr;</span>
+    <span>Decide</span><span style="color:#ccc;margin:0 4px">|</span>
+    <span style="border-bottom:1px dashed #ccc;padding-bottom:1px">feedback loop</span>
+    <span style="color:#ccc">&larr;</span><span>Post-Investment</span>
+  </div>
+
+  <!-- Adjacent -->
+  <div style="margin:0 40px;padding:24px 32px;border:1px dashed #d6d3cc;background:#f8f7f4">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px">
+      <h3 style="font-size:18px;font-weight:400">Post-Investment</h3>
+      <span class="sans" style="font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:#b0ada6;border:1px solid #d6d3cc;padding:2px 8px">Adjacent</span>
+    </div>
+    <p style="font-size:15px;line-height:1.65;color:#666">Portfolio monitoring, covenant tracking, follow-on detection, exit timing. The feedback loop that makes the decision engine sharper every quarter.</p>
+  </div>
+
+  <!-- What stays human label -->
+  <div class="sans" style="margin:56px 40px 0;border-top:1px solid #e0ddd8;padding-top:8px;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#b0ada6">What stays human</div>
+
+  <!-- Human roles -->
+  <div id="humans" style="display:flex;padding:28px 40px 0"></div>
+
+  <!-- Thesis -->
+  <div style="margin:64px 40px 0;padding:40px 0 32px;border-top:2px solid #1a1a1a">
+    <p style="font-size:21px;line-height:1.6;margin-bottom:20px;max-width:660px;letter-spacing:-0.01em">
+      We believe the investment process has three layers that can become infrastructure. Not today, the tooling isn't mature enough and the trust isn't built yet. But the trajectory is clear, and the firms that start codifying their DNA now will have a structural edge when the infrastructure catches up.
+    </p>
+    <p style="font-size:15px;line-height:1.6;color:#888;max-width:660px">
+      Investment DNA is our open-source starting point, a structured way to capture how your firm thinks, so that as tooling matures, your decision-making process is ready to plug in. Not a black box. A blueprint.
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div style="padding:20px 40px 24px">
+    <a href="https://github.com/Claira-AI/investment-dna" target="_blank" rel="noopener" class="sans" style="display:inline-block;font-size:13px;letter-spacing:0.06em;padding:12px 28px;background:#1a1a1a;color:#fafaf8;text-decoration:none;text-transform:uppercase">Get started on GitHub</a>
+    <a href="https://claira.io" target="_blank" rel="noopener" class="sans" style="display:inline-block;font-size:13px;letter-spacing:0.06em;padding:12px 28px;color:#888;text-decoration:none;margin-left:12px">About Claira &rarr;</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="sans" style="padding:24px 40px 40px;border-top:1px solid #e0ddd8;margin-top:40px;font-size:11px;color:#ccc;letter-spacing:0.06em;display:flex;justify-content:space-between">
+    <span>Claira &middot; Investment DNA &middot; Open Source</span>
+    <span>MIT License &middot; 2026</span>
+  </footer>
+
+  <script>
+    var currentView = "vision";
+    var openPillar = null;
+
+    var pillars = [
+      {
+        id: "ingest", num: "01", name: "Ingestion",
+        short: "Capture everything. Miss nothing.",
+        today: "Analysts spend 60 to 80 hours per deal organizing documents before analysis begins. Information is scattered across emails, data rooms, and broker portals.",
+        vision: "Every document, whether a CIM, financial model, legal agreement, or market report, is parsed, classified, and indexed automatically. The analyst\u2019s job shifts from organizing to analyzing.",
+        items: ["CIMs, teasers, pitch decks", "Data rooms (financials, legal, ops)", "Market and sector reports", "Third-party feeds (ratings, comps)", "Broker and advisor submissions"]
+      },
+      {
+        id: "standard", num: "02", name: "Standardization",
+        short: "Same rigor. Every deal. Every time.",
+        today: "Memo quality depends on which associate wrote it. Financial models use different assumptions deal to deal. The IC reviews inconsistently prepared materials.",
+        vision: "Every deal gets the same analytical baseline: consistent financial models, systematic risk flagging, comparable depth. Judgment gets applied to uniformly prepared materials.",
+        items: ["Financial models (DCF, LBO, credit analysis)", "Standardized company overview", "Systematic risk identification", "Comparable transaction analysis", "Investment memo drafting"]
+      },
+      {
+        id: "decide", num: "03", name: "Decision Engine",
+        short: "Your best investor. On every deal.",
+        today: "The firm\u2019s investment DNA lives in partners\u2019 heads. It\u2019s applied inconsistently and is hard to articulate to new team members or LPs.",
+        vision: "Return thresholds, sector preferences, structural requirements, and risk appetite are codified and scored against every opportunity, alongside current portfolio concentration and the full history of deals seen.",
+        items: ["Portfolio fit (concentration, correlation)", "Investment DNA alignment scoring", "Capital allocation optimization", "Pattern matching across deal history", "IC preparation and conviction scoring"]
+      }
+    ];
+
+    var humans = [
+      { name: "Deal Sourcing", desc: "Relationships, proprietary networks, and the trust that earns a seat at the table" },
+      { name: "Capital Raising", desc: "LP relationships, fund strategy, and the storytelling that raises the next fund" },
+      { name: "Final Judgment", desc: "The IC vote. The conviction call on a deal that scores well but feels wrong, or vice versa" }
+    ];
+
+    function setView(v) {
+      currentView = v;
+      document.getElementById("btn-today").style.background = v === "today" ? "#1a1a1a" : "transparent";
+      document.getElementById("btn-today").style.color = v === "today" ? "#fafaf8" : "#888";
+      document.getElementById("btn-vision").style.background = v === "vision" ? "#1a1a1a" : "transparent";
+      document.getElementById("btn-vision").style.color = v === "vision" ? "#fafaf8" : "#888";
+      renderPillars();
+    }
+
+    function togglePillar(id) {
+      openPillar = openPillar === id ? null : id;
+      renderPillars();
+    }
+
+    function renderPillars() {
+      var container = document.getElementById("pillars");
+      container.innerHTML = "";
+      pillars.forEach(function(p, i) {
+        var isOpen = openPillar === p.id;
+        var col = document.createElement("div");
+        col.style.cssText = "flex:1;padding:36px 32px 28px;cursor:pointer;transition:background 0.2s;" +
+          (i < 2 ? "border-right:1px solid #e0ddd8;" : "") +
+          (isOpen ? "background:#f4f3f0;" : "");
+        col.onclick = function() { togglePillar(p.id); };
+
+        var isToday = currentView === "today";
+        var contextColor = isToday ? "color:#996" : "color:#468";
+        var contextBg = isToday ? "background:#f9f6ee;border-left:3px solid #ddb" : "background:#f0f4f8;border-left:3px solid #aac8e0";
+        var contextText = isToday ? p.today : p.vision;
+
+        var itemsHtml = p.items.map(function(item, j) {
+          return '<div class="sans" style="font-size:13px;color:#666;padding:6px 0;line-height:1.45;' +
+            (j < p.items.length - 1 ? 'border-bottom:1px solid #eae8e3' : '') + '">' + item + '</div>';
+        }).join("");
+
+        col.innerHTML =
+          '<div class="sans" style="font-size:11px;color:#b0ada6;margin-bottom:12px;letter-spacing:0.08em">' + p.num + '</div>' +
+          '<h2 style="font-size:26px;font-weight:400;margin:0 0 6px;letter-spacing:-0.015em">' + p.name + '</h2>' +
+          '<p style="font-size:14px;font-style:italic;color:#888;margin:0 0 20px;line-height:1.5">' + p.short + '</p>' +
+          '<div style="font-size:14px;line-height:1.6;' + contextColor + ';margin:0 0 20px;padding:12px 14px;' + contextBg + '">' + contextText + '</div>' +
+          '<div>' + itemsHtml + '</div>';
+
+        container.appendChild(col);
+      });
+    }
+
+    function renderHumans() {
+      var container = document.getElementById("humans");
+      container.innerHTML = "";
+      humans.forEach(function(h, i) {
+        var div = document.createElement("div");
+        div.style.cssText = "flex:1;" +
+          (i < 2 ? "padding-right:32px;border-right:1px solid #e0ddd8;margin-right:32px;" : "");
+        div.innerHTML =
+          '<h4 style="font-size:20px;font-weight:400;margin:0 0 6px">' + h.name + '</h4>' +
+          '<p style="font-size:14px;color:#888;margin:0;line-height:1.55">' + h.desc + '</p>';
+        container.appendChild(div);
+      });
+    }
+
+    renderPillars();
+    renderHumans();
+  </script>
+</body>
+</html>
